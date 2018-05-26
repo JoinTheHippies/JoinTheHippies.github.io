@@ -3,6 +3,8 @@ color c = color(random(225, 255), random(225, 255), random(225, 255));
 
 void setup()
 {
+  textSize(25);
+  text("started setup", width - 100, 100);
   noStroke();
   size(1000, 1000);
   for(int i = 0; i < dots.length; i++)
@@ -14,6 +16,7 @@ void setup()
 void draw()
 {
   background(c);
+  text("ran draw", width - 100, 200);
   System.out.println("a");
   
   for(dot a : dots)
