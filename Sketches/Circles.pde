@@ -35,7 +35,7 @@ class dot
   float scale;
   color fillColor;
   
-  dot(float inDesiredX, float inDesiredY, float inScale, color iNFillColor)
+  dot(float inDesiredX, float inDesiredY, float inScale, color inFillColor)
   {
     this.desiredX = inDesiredX;
     this.desiredY = inDesiredY;
