@@ -6,6 +6,7 @@ void setup()
 {
   background(255, 0, 0);
   textSize(25);
+  background(0, 255, 0);
   text("started setup", width - 100, 100);
   noStroke();
   size(1000, 1000);
