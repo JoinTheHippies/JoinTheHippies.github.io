@@ -35,12 +35,12 @@ class dot
   float scale;
   color fillColor;
   
-  dot(float desiredX, float desiredY, float scale, color fillColor)
+  dot(float inDesiredX, float inDesiredY, float inScale, color iNFillColor)
   {
-    this.desiredX = desiredX;
-    this.desiredY = desiredY;
-    this.scale = scale;
-    this.fillColor = fillColor;
+    this.desiredX = inDesiredX;
+    this.desiredY = inDesiredY;
+    this.scale = inScale;
+    this.fillColor = inFillColor;
   }
   
   float GetX()
@@ -59,10 +59,10 @@ class dot
   {
     return desiredY;
   }
-  void SetCoords(float x, float y)
+  void SetCoords(float inX, float inY)
   {
-    this.x = x;
-    this.y = y;
+    this.x = inX;
+    this.y = inY;
   }
   void Display()
   {
