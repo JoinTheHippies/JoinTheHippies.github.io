@@ -8,6 +8,7 @@ void setup()
   textSize(25);
   background(0, 255, 0);
   text("started setup", width - 100, 100);
+  background(0, 0, 255);
   noStroke();
   size(1000, 1000);
   for(int i = 0; i < dots.length; i++)
