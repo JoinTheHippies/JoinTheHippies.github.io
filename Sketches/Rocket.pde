@@ -1,9 +1,9 @@
 void setup()
 {
-  size(displayWidth, displayHeight);
+  size(1000, 1000);
   noStroke();
   background(189, 245,252);
-  System.out.println((width - 100) + " " + (height - 100));
+  //System.out.println((width - 100) + " " + (height - 100));
   fill(127, 255, 0);
   rect(0, height - 200, width, 300);
   fill(255, 0, 0);
@@ -14,4 +14,12 @@ void setup()
 void draw()
 {
   
+}
+
+class RocketObject
+{
+  RocketObject()
+  {
+    
+  }
 }
