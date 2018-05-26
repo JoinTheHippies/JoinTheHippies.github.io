@@ -1,8 +1,10 @@
 dot[] dots = new dot[20];
 color c = color(random(225, 255), random(225, 255), random(225, 255));
 
+
 void setup()
 {
+  background(255, 0, 0);
   textSize(25);
   text("started setup", width - 100, 100);
   noStroke();
