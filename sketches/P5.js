@@ -63,7 +63,7 @@ function Rocket()
   this.Display = function()
   {
     var offset = random(-1, 1);
-    fill((114,61,93);
+    fill(114,61,93);
     rect(this.x + offset, this.y, 15, 100);
     fill(0,61,93);
     rect(this.x + offset, this.y + 75, 15, 25);
