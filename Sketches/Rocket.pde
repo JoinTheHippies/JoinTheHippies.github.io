@@ -5,7 +5,7 @@ boolean launched;
 void setup()
 {
   frameRate(120);
-  size(screen.width, screen.height);//screen.width,screen.height);
+  size(screen.width / 2, screen.height / 2);//screen.width,screen.height);
   noStroke();
   background(189, 245, 252);
   //System.out.println((width - 100) + " " + (height - 100));
