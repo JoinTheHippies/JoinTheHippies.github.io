@@ -4,7 +4,7 @@ var smokeList;
 function setup() {
   smokeList = [];
   noStroke();
-  var canvas = createCanvas(displayWidth / 1.2, displayHeight / 1.2);
+  var canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   canvas.style('display', 'block');
