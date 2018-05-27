@@ -36,7 +36,7 @@ function draw() {
     element.Display();
   });
   
-  text(smokeList.length, 100, 100);
+  //text(smokeList.length, 100, 100);
 }
 
 function Rocket()
