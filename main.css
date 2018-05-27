@@ -1,9 +1,10 @@
+@font-face{
+  	font-family: "trench";
+  	scr:url("fonts/trench/trench100free.otf")
+  }
+
 body{
-
-	@font-face{
-  		font-family: "trench";
-  		scr:url("fonts/trench/trench100free.otf")
-  	}
-  	h1{font-family: "trench";}
-
+	padding: 0; 
+	margin: 0; 
+	font-family: trench;
 }
