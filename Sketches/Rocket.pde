@@ -40,7 +40,7 @@ void draw()
   }
   fill(127, 255, 0);
   rect(0, height - 200, width, 300);
-  rockee.Display();
+  //rockee.Display();
 }
 
 
