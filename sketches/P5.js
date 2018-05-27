@@ -14,8 +14,8 @@ function setup() {
 
 function draw() {
   textSize(32);
-  background(140,61,93);
-  fill(0,61,93);
+  background(242,61,93);
+  fill(140,61,93);
   triangle(width, height / 4, width, height, 0, height);
   rect(0, height - 200, width, 200);
   rocketObj.Display();
@@ -63,9 +63,9 @@ function Rocket()
   this.Display = function()
   {
     var offset = random(-1, 1);
-    fill(242,61,93);
+    fill((114,61,93);
     rect(this.x + offset, this.y, 15, 100);
-    fill(114,61,93);
+    fill(0,61,93);
     rect(this.x + offset, this.y + 75, 15, 25);
     rect(this.x + offset, this.y, 15, 25);
     fill(66,61,93);
