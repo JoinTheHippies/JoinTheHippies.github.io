@@ -29,7 +29,10 @@ void draw()
   }
   else
   {
-    launched = true;
+    if(!launched)
+    {
+      launched = true;
+    }
   }
   if(launched)
   {
