@@ -4,7 +4,10 @@ var smokeList;
 function setup() {
   smokeList = [];
   noStroke();
-  createCanvas(displayWidth / 1.2, displayHeight / 1.2);
+  var canvas = createCanvas(displayWidth / 1.2, displayHeight / 1.2);
+  canvas.position(0, 0);
+  canvas.style('z-index', '-1');
+  canvas.style('display', 'block');
   background(0, 255, 0);
   rocketObj = new Rocket();
 }
