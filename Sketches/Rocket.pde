@@ -13,8 +13,8 @@ void setup()
   //fill(255, 0, 0);
   //rect(100, height - 300, 15, 100);
   //fill(207, 211, 211);
-  rockee = new RocketObject(200, height - 300);
-  rockee.Display();
+  //rockee = new RocketObject(200, height - 300);
+  //rockee.Display();
 }
 
 void draw()
