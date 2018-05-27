@@ -34,10 +34,10 @@ void draw()
   //    launched = true;
   //  }
   //}
-  if(launched)
-  {
-    rockee.SetCoords(rockee.GetX(), rockee.GetY() - 10);
-  }
+  //if(launched)
+  //{
+  //  rockee.SetCoords(rockee.GetX(), rockee.GetY() - 10);
+  //}
   fill(127, 255, 0);
   rect(0, height - 200, width, 300);
   //rockee.Display();
