@@ -13,29 +13,29 @@ void setup()
   //fill(255, 0, 0);
   //rect(100, height - 300, 15, 100);
   //fill(207, 211, 211);
-  //rockee = new RocketObject(200, height - 300);
-  //rockee.Display();
+  rockee = new RocketObject(200, height - 300);
+  rockee.Display();
 }
 
 void draw()
 {
-  //textSize(32);
-  //background(189, 245, 252);
-  //if(12000 - millis() > 0)
-  //{
-  //  text("Launch in: " + (12000 - millis()), width / 2, height / 2);
-  //}
-  //else
-  //{
-  //  launched = true;
-  //}
-  //if(launched)
-  //{
-  //  rockee.SetCoords(rockee.GetX(), rockee.GetY() - 10);
-  //}
-  //fill(127, 255, 0);
-  //rect(0, height - 200, width, 300);
-  //rockee.Display();
+  textSize(32);
+  background(189, 245, 252);
+  if(12000 - millis() > 0)
+  {
+    text("Launch in: " + (12000 - millis()), width / 2, height / 2);
+  }
+  else
+  {
+    launched = true;
+  }
+  if(launched)
+  {
+    rockee.SetCoords(rockee.GetX(), rockee.GetY() - 10);
+  }
+  fill(127, 255, 0);
+  rect(0, height - 200, width, 300);
+  rockee.Display();
 }
 
 
