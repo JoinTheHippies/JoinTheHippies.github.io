@@ -4,6 +4,7 @@ boolean launched;
 
 void setup()
 {
+  frameRate(60);
   size(screen.width,screen.height);
   noStroke();
   background(189, 245, 252);
