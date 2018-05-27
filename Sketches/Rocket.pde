@@ -23,17 +23,17 @@ void draw()
   textSize(32);
   background(189, 245, 252);
   text("FrameRate: " + frameRate, width / 2, height / 2 - 100);
-  if(12000 - millis() > 0)
-  {
-    text("Launch in: " + (12000 - millis()), width / 2, height / 2);
-  }
-  else
-  {
-    if(!launched)
-    {
-      launched = true;
-    }
-  }
+  //if(12000 - millis() > 0)
+  //{
+  //  text("Launch in: " + (12000 - millis()), width / 2, height / 2);
+  //}
+  //else
+  //{
+  //  if(!launched)
+  //  {
+  //    launched = true;
+  //  }
+  //}
   if(launched)
   {
     rockee.SetCoords(rockee.GetX(), rockee.GetY() - 10);
