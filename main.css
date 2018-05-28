@@ -18,3 +18,12 @@ body{
 	right:20px;
 	font-size: 18px;
 }
+.centerTitle{
+	font-size: 50px;
+	font-weight: lighter;
+	font-family: 'Montserrat';
+	color: #F7D08A;
+	position:absolute;
+	bottom:50vh;
+	right:50vw;
+}
