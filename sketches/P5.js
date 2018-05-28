@@ -83,7 +83,7 @@ function Cloud()
   this.desiredSize = random(50, 100);
   console.log(this.desiredSize);
   this.cloudSize = 0;
-  this.cloudBool = Math.random() >= 0.5;
+  this.cloudColor = (Math.random() >= 0.5)?color(247,159,121):color(247,208,138);
   this.opacity = 255;
   
   this.Display = function()
@@ -94,14 +94,8 @@ function Cloud()
       console.log("reducing opacity");
       this.opacity -= 15;
     }
-    if(this.cloudBool)
-    {
-      fill(247,159,121, this.opacity);
-    }
-    else
-    {
-      fill(247,208,138, this.opacity);
-    }
+    fill(this.cloudColor.red(), this.cloudColor.green(), this.cloudColor.blue(), opacity);
+    console.log("new script");
     //fill(this.cloudColorDecider, this.cloudColorDecider, this.cloudColorDecider, this.opacity);
     ellipse(this.x, this.y + 100, this.cloudSize, this.cloudSize);
   }
