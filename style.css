@@ -25,5 +25,5 @@ body{
 	color: #F7D08A;
 	position:absolute;
 	bottom:50vh;
-	right:50vw;
+	right:50vw + 100px;
 }
