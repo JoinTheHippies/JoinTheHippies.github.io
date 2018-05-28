@@ -1,17 +1,18 @@
-@font-face{
+/*@font-face{
   	font-family: 'trench';
   	scr:url('fonts/trench/trench100free.otf') format('truetype');
-  }
+  }*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body{
 	padding: 0; 
 	margin: 0; 
-	font-family: 'trench';
+	font-family: 'Montserrat';
 }
 
 
 .bottomRight{
-	font-family: 'trench';
+	font-family: 'Montserrat';
 	position: absolute;
 	bottom:8px;
 	right:50px;
