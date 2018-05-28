@@ -1,5 +1,5 @@
 @font-face{
-  	font-family: "antipasto", sans-serif;
+  	font-family: "antipasto";
   	scr:url(https://www.jointhehippies.github.io/fonts/antipasto/thinfont.ttf) format("truetype");
   }
 
@@ -9,7 +9,6 @@ body{
 	font-family: "antipasto", sans-serif;
 }
 
-h1{font-family: "antipasto", sans-serif;}
 
 .bottomRight{
 	font-family: "antipasto", sans-serif;
