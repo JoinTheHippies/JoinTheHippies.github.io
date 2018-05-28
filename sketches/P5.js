@@ -94,7 +94,7 @@ function Cloud()
       console.log("reducing opacity");
       this.opacity -= 15;
     }
-    if(cloudBool)
+    if(this.cloudBool)
     {
       fill(247,159,121, this.opacity);
     }
