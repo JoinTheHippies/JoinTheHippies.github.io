@@ -1,17 +1,17 @@
 @font-face{
-  	font-family: 'trench';
-  	scr:url('fonts/trench/trench100free.otf') format('truetype');
+  	font-family: 'advent-pro';
+  	scr:url('fonts/advent-pro/advent.otf') format('truetype');
   }
 
 body{
 	padding: 0; 
 	margin: 0; 
-	font-family: 'trench';
+	font-family: 'advent-pro';
 }
 
 
 .bottomRight{
-	font-family: 'trench';
+	font-family: 'advent-pro';
 	position: absolute;
 	bottom:8px;
 	right:50px;
