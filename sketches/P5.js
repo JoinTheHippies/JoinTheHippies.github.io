@@ -14,9 +14,12 @@ function setup() {
 
 function draw() {
   textSize(32);
+  //Sky
   background(135, 182, 167);
+  //Sun
   fill(247,159,121);
   ellipse(width / 2, height / 2, 500, 500);
+  //Ground (rect and tri)
   fill(91, 89, 65);
   triangle(width, height / 4, width, height, 0, height);
   rect(0, height - 200, width, 200);
@@ -65,14 +68,17 @@ function Rocket()
   this.Display = function()
   {
     var offset = random(-1, 1);
+    //Rocket body
     fill(227,240,155);
     rect(this.x + offset, this.y, 15, 100);
+    //Rocket body smaller pieces
     fill(154, 163, 104);
     rect(this.x + offset, this.y + 75, 15, 25);
     rect(this.x + offset, this.y, 15, 25);
+    //Nose cone
     fill(121, 124, 101);
     triangle(this.x + offset, this.y, this.x + offset + 15, this.y, this.x + offset + 7.5, this.y - 15);
-    //fill(255, 202, 40);
+    //Fins
     triangle(this.x + offset, this.y + 100, this.x + offset, this.y + 85, this.x + offset - 15, this.y + 100);
     triangle(this.x + offset + 15, this.y + 100, this.x + offset + 15, this.y + 85, this.x + offset + 30, this.y + 100);
   }
