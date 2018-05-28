@@ -10,12 +10,11 @@ body{
 	font-family: 'Montserrat';
 }
 
-
 .bottomRight{
 	font-weight: 100;
 	font-family: 'Montserrat';
 	position: absolute;
 	bottom:8px;
-	right:50px;
+	right:45px;
 	font-size: 18px;
 }
