@@ -87,7 +87,7 @@ function Rocket()
 function Cloud()
 {
   this.x = rocketObj.GetX() + random(-30, 30);
-  this.y = rocketObj.GetY();
+  this.y = rocketObj.GetY() - 15;
   this.desiredSize = random(50, 100);
   console.log(this.desiredSize);
   this.cloudSize = 0;
