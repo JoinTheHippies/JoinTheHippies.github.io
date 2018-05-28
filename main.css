@@ -10,3 +10,11 @@ body{
 }
 
 h1{font-family: :"thin";, sans-serif}
+
+.bottomRight{
+	font-family: "thin";
+	position: absolute;
+	bottom:8px;
+	right:50px;
+	font-size: 18px;
+}
