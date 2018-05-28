@@ -1,12 +1,14 @@
 @font-face{
   	font-family: "trench";
   	scr:url("fonts/trench/trench100free.otf")
+  	font-family: "thin";
+  	scr:url("fonts/antipasto/antipastoPro_trial");
   }
 
 body{
 	padding: 0; 
 	margin: 0; 
-	font-family: "trench";
+	font-family: "thin";
 }
 
-h1{font-family: :"trench";}
+h1{font-family: :"thin";, sans-serif}
