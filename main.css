@@ -1,17 +1,17 @@
 @font-face{
-  	font-family: trench;
+  	font-family: anti;
   	scr:url('https://www.jointhehippies.github.io/fonts/antipasto/thinfont.ttf') format('truetype');
   }
 
 body{
 	padding: 0; 
 	margin: 0; 
-	font-family: trench;
+	font-family: anti;
 }
 
 
 .bottomRight{
-	font-family: trench;
+	font-family: anti;
 	position: absolute;
 	bottom:8px;
 	right:50px;
