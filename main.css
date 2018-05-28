@@ -1,17 +1,17 @@
 @font-face{
-  	font-family: trench;
+  	font-family: 'trench';
   	scr:url('https://www.jointhehippies.github.io/fonts/trench/trench100free.otf') format('truetype');
   }
 
 body{
 	padding: 0; 
 	margin: 0; 
-	font-family: trench;
+	font-family: 'trench';
 }
 
 
 .bottomRight{
-	font-family: trench;
+	font-family: 'trench';
 	position: absolute;
 	bottom:8px;
 	right:50px;
