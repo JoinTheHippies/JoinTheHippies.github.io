@@ -15,7 +15,7 @@ function setup() {
 function draw() {
   textSize(32);
   background(135, 182, 167);
-  fill(247,208,138);
+  fill(247,159,121);
   ellipse(width / 2, height / 2, 500, 500);
   fill(91, 89, 65);
   triangle(width, height / 4, width, height, 0, height);
