@@ -1,18 +1,18 @@
 @font-face{
-  	font-family: "thin";
+  	font-family: "antipasto";
   	scr:url("fonts/antipasto/AntipastoPro_trial.ttf");
   }
 
 body{
 	padding: 0; 
 	margin: 0; 
-	font-family: "thin";
+	font-family: "antipasto";
 }
 
-h1{font-family: :"thin";, sans-serif}
+h1{font-family: :"antipasto";}
 
 .bottomRight{
-	font-family: "thin";
+	font-family: "antipasto";
 	position: absolute;
 	bottom:8px;
 	right:50px;
