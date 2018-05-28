@@ -1,17 +1,17 @@
 @font-face{
-  	font-family: advent;
-  	scr:url('https://www.jointhehippies.github.io/fonts/trench/trench100free.otf') format('truetype');
+  	font-family: advent-pro;
+  	scr:url('https://www.jointhehippies.github.io/fonts/advent-pro/advent.otf') format('truetype');
   }
 
 body{
 	padding: 0; 
 	margin: 0; 
-	font-family: advent;
+	font-family: advent-pro;
 }
 
 
 .bottomRight{
-	font-family: advent;
+	font-family: advent-pro;
 	position: absolute;
 	bottom:8px;
 	right:50px;
