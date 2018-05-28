@@ -9,10 +9,10 @@ body{
 	font-family: "antipasto";
 }
 
-h1{font-family: :"antipasto";}
+/*h1{font-family: :"antipasto";}*/
 
 .bottomRight{
-	font-family: "antipasto";
+	/*font-family: "antipasto";*/
 	position: absolute;
 	bottom:8px;
 	right:50px;
