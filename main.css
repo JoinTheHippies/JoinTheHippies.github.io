@@ -11,7 +11,7 @@ body{
 }
 
 .bottomRight{
-	font-weight: 100;
+	font-weight: lighter;
 	font-family: 'Montserrat';
 	position: absolute;
 	bottom:8px;
