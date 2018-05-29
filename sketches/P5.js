@@ -33,7 +33,8 @@ function draw() {
       if(random(1, 15) == 13)
       {
         fill(92,219,149);
-        rect(x, y, 4, 7);
+        rect(x * 4, y * 4, 4, 7);
+        console.log('placed fleck at (' + (x*4) + ", " + (y*4) + ")");
       }
 
     }
