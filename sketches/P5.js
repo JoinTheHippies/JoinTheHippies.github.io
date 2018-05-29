@@ -20,7 +20,7 @@ function draw() {
        //     fill(247,159,121);
        //     ellipse(width / 2, height / 2, 500, 500);
   //Ground (rect and tri)
-  fill(55,150,131);
+  fill(5,56,107);
   triangle(width, height / 4, width, height, 0, height);
   rect(0, height - 200, width, 200);
   rocketObj.Display();
@@ -68,13 +68,28 @@ function Rocket()
   this.Display = function()
   {
     var offset = random(-1, 1);
+
+
+    //Rocket Body Outline
+    fill(92,219,149)
+    rect(this.x + offset - 2, this.y - 2, 19, 104);
+    //Nose cone outline
+    fill(92,219,149);
+    triangle(this.x + offset - 2, this.y, this.x + offset + 17, this.y, this.x + offset + 7.5, this.y - 17);
+    //Fins outline
+    fill(92,219,149);
+    triangle(this.x + offset, this.y + 100, this.x + offset, this.y + 83, this.x + offset - 17, this.y + 100);
+    triangle(this.x + offset + 15, this.y + 100, this.x + offset + 15, this.y + 83, this.x + offset + 32, this.y + 100);
+
+
+
     //Rocket body
     fill(5,56,107);
     rect(this.x + offset, this.y, 15, 100);
     //Rocket body smaller pieces
-    fill(55,150,131);
-    rect(this.x + offset, this.y + 75, 15, 25);
-    rect(this.x + offset, this.y, 15, 25);
+    fill(92,219,149);
+    rect(this.x + offset + 2, this.y + 75, 11, 25);
+    rect(this.x + offset + 2, this.y, 11, 25);
     //Nose cone
     fill(5,56,107);
     triangle(this.x + offset, this.y, this.x + offset + 15, this.y, this.x + offset + 7.5, this.y - 15);
@@ -108,7 +123,7 @@ function Cloud()
     }
     else
     {
-      fill(c, this.opacity);
+      fill(247,208,138, this.opacity);
     }
     //fill(this.cloudColorDecider, this.cloudColorDecider, this.cloudColorDecider, this.opacity);
     ellipse(this.x, this.y + 100, this.cloudSize, this.cloudSize);
