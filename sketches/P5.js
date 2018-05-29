@@ -1,9 +1,11 @@
 var rocketObj;
 var smokeList;
+var fleckList;
 
 function setup() {
-  console.log("flecks version 5");
+  console.log("flecks version 6");
   smokeList = [];
+  fleckList = [];
   noStroke();
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
@@ -11,6 +13,21 @@ function setup() {
   canvas.style('display', 'block');
   background(0, 255, 0);
   rocketObj = new Rocket();
+
+  //Spawn flecks
+  for(var x = 0; x < Math.round(width) / 4; x++)
+  {
+    for(var y = 0; y < Math.round(height) / 4; y++)
+    {
+      //console.log('may place fleck');
+      if(random(1, 50) < 4)
+      {
+        fleckList.push(new Fleck(x*4, y*4));
+        console.log('placed fleck at (' + (x*4) + ", " + (y*4) + ")");
+      }
+
+    }
+  }
 }
 
 function draw() {
@@ -26,20 +43,9 @@ function draw() {
   rect(0, height - 200, width, 200);
 
   //Random sky-colored flecks
-  for(var x = 0; x < Math.round(width) / 4; x++)
-  {
-    for(var y = 0; y < Math.round(height) / 4; y++)
-    {
-      //console.log('may place fleck');
-      if(random(1, 20) < 4)
-      {
-        fill(92,219,149);
-        rect(x * 4, y * 4, 4, 7);
-        console.log('placed fleck at (' + (x*4) + ", " + (y*4) + ")");
-      }
-
-    }
-  }
+  fleckList.forEach(function(f){
+    f.Display();
+  });
 
   rocketObj.Display();
   
@@ -145,5 +151,18 @@ function Cloud()
     }
     //fill(this.cloudColorDecider, this.cloudColorDecider, this.cloudColorDecider, this.opacity);
     ellipse(this.x, this.y + 100, this.cloudSize, this.cloudSize);
+  }
+}
+
+function Fleck(inX, inY)
+{
+  this.x = inX;
+  this.y = inY;
+
+ 
+  this.Display = function()
+  {
+    fill(92,219,149);
+    rect(x, y, 4, 7, 2, 2);
   }
 }
