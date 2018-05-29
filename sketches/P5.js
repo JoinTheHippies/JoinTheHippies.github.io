@@ -3,7 +3,7 @@ var smokeList;
 var fleckList;
 
 function setup() {
-  console.log("flecks version 6");
+  console.log("flecks version 7");
   smokeList = [];
   fleckList = [];
   noStroke();
@@ -163,6 +163,6 @@ function Fleck(inX, inY)
   this.Display = function()
   {
     fill(92,219,149);
-    rect(x, y, 4, 7, 2, 2);
+    rect(this.x, this.y, 4, 7, 2, 2);
   }
 }
