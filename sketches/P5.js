@@ -3,7 +3,7 @@ var smokeList;
 var fleckList;
 
 function setup() {
-  console.log("flecks version 8");
+  console.log("flecks version 9");
   smokeList = [];
   fleckList = [];
   noStroke();
