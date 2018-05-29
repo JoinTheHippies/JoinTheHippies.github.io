@@ -122,7 +122,7 @@ function Cloud()
   this.x = rocketObj.GetX() + random(-30, 30);
   this.y = rocketObj.GetY() + 15;
   this.desiredSize = random(50, 100);
-  console.log(this.desiredSize);
+  //console.log(this.desiredSize);
   this.cloudSize = 0;
   this.cloudBool = Math.random() >= 0.5;
   this.opacity = 255;
@@ -132,7 +132,7 @@ function Cloud()
     this.cloudSize = lerp(this.cloudSize, this.desiredSize, 0.5);
     if(this.desiredSize - this.cloudSize <= 1)
     {
-      console.log("reducing opacity");
+      //console.log("reducing opacity");
       this.opacity -= 15;
     }
     if(this.cloudBool)
