@@ -2,7 +2,7 @@ var rocketObj;
 var smokeList;
 
 function setup() {
-  console.log("flecks version 4");
+  console.log("flecks version 5");
   smokeList = [];
   noStroke();
   var canvas = createCanvas(windowWidth, windowHeight);
@@ -30,8 +30,8 @@ function draw() {
   {
     for(var y = 0; y < Math.round(height) / 4; y++)
     {
-      console.log('may place fleck');
-      if(random(1, 15) == 13)
+      //console.log('may place fleck');
+      if(random(1, 20) < 4)
       {
         fill(92,219,149);
         rect(x * 4, y * 4, 4, 7);
