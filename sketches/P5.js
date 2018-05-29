@@ -15,17 +15,11 @@ function setup() {
   rocketObj = new Rocket();
 
   //Spawn flecks
-  for(var x = 0; x < Math.round(width) / 4; x++)
+  for(var x = 0; x < Math.round(width); x+=20)
   {
-    for(var y = 0; y < Math.round(height) / 4; y++)
+    for(var y = 0; y < Math.round(height); y+=35)
     {
-      //console.log('may place fleck');
-      if(random(1, 100) < 4)
-      {
-        fleckList.push(new Fleck(x*4, y*4));
-        console.log('placed fleck at (' + (x*4) + ", " + (y*4) + ")");
-      }
-
+      fleckList.push(new Fleck(x*4, y*7));
     }
   }
 }
@@ -34,9 +28,9 @@ function draw() {
   textSize(32);
   //Sky
   background(92,219,149);
-       //     Sun
-       //     fill(247,159,121);
-       //     ellipse(width / 2, height / 2, 500, 500);
+                      //     Sun
+                      //     fill(247,159,121);
+                      //     ellipse(width / 2, height / 2, 500, 500);
   //Ground (rect and tri)
   fill(5,56,107);
   triangle(width, height / 4, width, height, 0, height);
@@ -56,19 +50,14 @@ function draw() {
   else
   {
     rocketObj.SetCoords(rocketObj.GetX(), rocketObj.GetY() - 15);
-    //console.log("b");
     if(int(random(1, 3)) == 2)
     {
-      //console.log("a");
       smokeList.push(new Cloud());
     }
   }
   smokeList.forEach(function(element){
-    //console.log("looping");
     element.Display();
   });
-  
-  //text(smokeList.length, 100, 100);
 }
 
 function Rocket()
