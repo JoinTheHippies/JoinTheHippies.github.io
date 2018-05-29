@@ -2,7 +2,7 @@ var rocketObj;
 var smokeList;
 
 function setup() {
-  console.log("flecks version");
+  console.log("flecks version 2");
   smokeList = [];
   noStroke();
   var canvas = createCanvas(windowWidth, windowHeight);
@@ -28,7 +28,7 @@ function draw() {
   //Random sky-colored flecks
   for(var x = 0; x < Math.round(width) / 4; x++)
   {
-    for(var y = 0; y < Math.round(height); y++)
+    for(var y = 0; y < Math.round(height) / 4; y++)
     {
 
       if(random(1, 15) == 13)
