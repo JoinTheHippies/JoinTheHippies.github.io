@@ -15,9 +15,9 @@ function setup() {
   rocketObj = new Rocket();
 
   //Spawn flecks
-  for(var x = 0; x < Math.round(width); x+=20)
+  for(var x = 0; x < Math.round(width); x+=8)
   {
-    for(var y = 0; y < Math.round(height); y+=35)
+    for(var y = 0; y < Math.round(height); y+=14)
     {
       fleckList.push(new Fleck(x*4, y*7));
     }
