@@ -3,7 +3,7 @@ var smokeList;
 var fleckList;
 
 function setup() {
-  console.log("flecks version 7");
+  console.log("flecks version 8");
   smokeList = [];
   fleckList = [];
   noStroke();
@@ -20,7 +20,7 @@ function setup() {
     for(var y = 0; y < Math.round(height) / 4; y++)
     {
       //console.log('may place fleck');
-      if(random(1, 50) < 4)
+      if(random(1, 100) < 4)
       {
         fleckList.push(new Fleck(x*4, y*4));
         console.log('placed fleck at (' + (x*4) + ", " + (y*4) + ")");
