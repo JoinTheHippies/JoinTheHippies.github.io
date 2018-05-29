@@ -2,7 +2,7 @@ var rocketObj;
 var smokeList;
 
 function setup() {
-  console.log("flecks version 3");
+  console.log("flecks version 4");
   smokeList = [];
   noStroke();
   var canvas = createCanvas(windowWidth, windowHeight);
