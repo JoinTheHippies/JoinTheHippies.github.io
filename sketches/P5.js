@@ -23,6 +23,22 @@ function draw() {
   fill(5,56,107);
   triangle(width, height / 4, width, height, 0, height);
   rect(0, height - 200, width, 200);
+
+  //Random sky-colored flecks
+  for(var x = 0; x < Math.round(width) / 4; x++)
+  {
+    for(var y = 0; y < Math.round(height); y++)
+    {
+
+      if(random(1, 15) == 13)
+      {
+        fill(92,219,149);
+        rect(x, y, 4, 7);
+      }
+
+    }
+  }
+
   rocketObj.Display();
   
   if(millis() < 12000)
