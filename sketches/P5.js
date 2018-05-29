@@ -1,6 +1,6 @@
 var rocketObj;
 var smokeList;
-var fleckList;
+// var fleckList;
 
 function setup() {
   console.log("flecks version 9");
@@ -15,13 +15,13 @@ function setup() {
   rocketObj = new Rocket();
 
   //Spawn flecks
-  for(var x = 0; x < Math.round(width); x+=20)
-  {
-    for(var y = 0; y < Math.round(height); y+=35)
-    {
-      fleckList.push(new Fleck(x, y));
-    }
-  }
+  // for(var x = 0; x < Math.round(width); x+=20)
+  // {
+  //   for(var y = 0; y < Math.round(height); y+=35)
+  //   {
+  //     fleckList.push(new Fleck(x, y));
+  //   }
+  // }
 }
 
 function draw() {
@@ -37,9 +37,9 @@ function draw() {
   rect(0, height - 200, width, 200);
 
   //Random sky-colored flecks
-  fleckList.forEach(function(f){
-    f.Display();
-  });
+  // fleckList.forEach(function(f){
+  //   f.Display();
+  // });
 
   rocketObj.Display();
   
