@@ -9,7 +9,7 @@ function setup() {
   timeInSeconds = 0;
   widthOffset = -300;
   heightOffset = 200;
-  console.log("flecks version 11");
+  console.log("flecks version 12");
   smokeList = [];
   //fleckList = [];
   noStroke();
