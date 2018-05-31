@@ -130,8 +130,8 @@ function Rocket()
     triangle(this.x + offset - 2, this.y, this.x + offset + 17, this.y, this.x + offset + 7.5, this.y - 17);
     //Fins outline
     fill(92,219,149);
-    triangle(this.x + offset, this.y + 102, this.x + offset, this.y + 83, this.x + offset - 17, this.y + 102);
-    triangle(this.x + offset + 15, this.y + 102, this.x + offset + 15, this.y + 83, this.x + offset + 32, this.y + 102);
+    triangle(this.x + offset, this.y + 102, this.x + offset, this.y + 83, this.x + offset - 19, this.y + 102);
+    triangle(this.x + offset + 15, this.y + 102, this.x + offset + 15, this.y + 83, this.x + offset + 34, this.y + 102);
 
 
 
