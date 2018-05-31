@@ -16,7 +16,7 @@ function setup() {
   widthOffset = -width / 3;
   heightOffset = 200;
 
-  console.log("flecks version 12");
+  console.log("3d platform");
   smokeList = [];
   //fleckList = [];
   noStroke();
