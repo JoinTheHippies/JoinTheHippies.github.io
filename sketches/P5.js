@@ -6,17 +6,20 @@ var timeInSeconds;
 // var fleckList;
 
 function setup() {
-  timeInSeconds = 0;
-  widthOffset = -300;
-  heightOffset = 200;
-  console.log("flecks version 12");
-  smokeList = [];
-  //fleckList = [];
-  noStroke();
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   canvas.style('display', 'block');
+
+  timeInSeconds = 0;
+
+  widthOffset = -width / 3;
+  heightOffset = 200;
+
+  console.log("flecks version 12");
+  smokeList = [];
+  //fleckList = [];
+  noStroke();
   background(0, 255, 0);
   rocketObj = new Rocket();
 
@@ -98,8 +101,8 @@ function DrawPlatform()
 
 function Rocket()
 {
-  this.x = 100;
-  this.y = height - 300;
+  this.x = width / 2 - (width / 3);
+  this.y = height + 200;
   
   this.GetX = function()
   {
