@@ -51,6 +51,7 @@ function draw() {
   
   if(millis() < 12000)
   {
+    fill(255, 255, 255);
     text("Launching in: " + (12000 - millis()), width / 2, height / 2);
   }
   else
