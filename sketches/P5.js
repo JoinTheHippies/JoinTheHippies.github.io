@@ -7,7 +7,7 @@ var timeInSeconds;
 
 function setup() {
   timeInSeconds = 0;
-  widthOffset = -200;
+  widthOffset = -300;
   heightOffset = 200;
   console.log("flecks version 11");
   smokeList = [];
