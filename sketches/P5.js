@@ -13,7 +13,7 @@ function setup() {
 
   timeInSeconds = 0;
 
-  widthOffset = -width / 3;
+  widthOffset = -width / 4;
   heightOffset = 200;
 
   console.log("3d platform ver 1");
