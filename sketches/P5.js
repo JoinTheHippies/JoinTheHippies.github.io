@@ -18,7 +18,7 @@ function setup() {
 
   console.log("3d platform");
   smokeList = [];
-  //fleckList = [];
+  fleckList = [];
   noStroke();
   background(0, 255, 0);
   rocketObj = new Rocket();
