@@ -13,7 +13,7 @@ function setup() {
 
   timeInSeconds = 0;
 
-  widthOffset = -width / 4;
+  widthOffset = -width / 5;
   heightOffset = 200;
 
   console.log("3d platform ver 2");
@@ -102,7 +102,7 @@ function DrawPlatform()
 function Rocket()
 {
   this.x = width / 2 - (width / 3);
-  this.y = height - 200;
+  this.y = height - 300;
   
   this.GetX = function()
   {
