@@ -5,7 +5,7 @@ var heightOffset;
 // var fleckList;
 
 function setup() {
-  widthOffset = 0;
+  widthOffset = -100;
   heightOffset = 200;
   console.log("flecks version 10");
   smokeList = [];
