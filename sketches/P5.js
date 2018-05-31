@@ -30,7 +30,6 @@ function setup() {
 
 function draw() {
   textSize(32);
-  background(255, 0, 0);
   //Sky
   background(44,53,49);
   //Sun
