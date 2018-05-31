@@ -3,7 +3,7 @@ var smokeList;
 var widthOffset;
 var heightOffset;
 var timeInSeconds;
-// var fleckList;
+var fleckList;
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
