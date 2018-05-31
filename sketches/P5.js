@@ -101,7 +101,7 @@ function DrawPlatform()
 
 function Rocket()
 {
-  this.x = width / 2 - (width / 3);
+  this.x = width / 2 - (width / 2.5);
   this.y = height - 300;
   
   this.GetX = function()
