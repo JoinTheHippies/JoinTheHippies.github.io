@@ -1,11 +1,15 @@
 var rocketObj;
 var smokeList;
+var widthOffset;
+var heightOffset;
 // var fleckList;
 
 function setup() {
+  widthOffset = 0;
+  heightOffset = 200;
   console.log("flecks version 10");
   smokeList = [];
-  fleckList = [];
+  //fleckList = [];
   noStroke();
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
@@ -27,14 +31,16 @@ function setup() {
 function draw() {
   textSize(32);
   //Sky
-  background(92,219,149);
-                      //     Sun
-                      //     fill(247,159,121);
-                      //     ellipse(width / 2, height / 2, 500, 500);
+  background(44,53,49);
+  //Sun
+  fill(247,159,121);
+  ellipse(width / 2, height / 2, 500, 500);
+
   //Ground (rect and tri)
-  fill(5,56,107);
-  triangle(width, height / 4, width, height, 0, height);
-  rect(0, height - 200, width, 200);
+  // fill(5,56,107);
+  // triangle(width, height / 4, width, height, 0, height);
+  // rect(0, height - 200, width, 200);
+  DrawPlatform();
 
   //Random sky-colored flecks
   // fleckList.forEach(function(f){
@@ -58,6 +64,26 @@ function draw() {
   smokeList.forEach(function(element){
     element.Display();
   });
+}
+
+function DrawPlatform()
+{
+  quad(width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 200 + widthOffset, height / 2 - 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset);
+  quad(width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 100 + heightOffset);
+  quad(width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 100 + heightOffset, width / 2 - 400 + widthOffset, height / 2 + 100 + heightOffset);
+  
+  strokeWeight(5);
+  stroke(255, 255, 255);
+  
+  line(width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 200 + widthOffset, height / 2 - 50 + heightOffset);
+  line(width / 2 - 200 + widthOffset, height / 2 - 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset);
+  line(width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset);
+  line(width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 + heightOffset);
+  line(width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 100 + heightOffset);
+  line(width / 2 + 100 + widthOffset, height / 2 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 100 + heightOffset);
+  line(width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset);
+  line(width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 400 + widthOffset, height / 2 + 100 + heightOffset);
+  line(width / 2 - 400 + widthOffset, height / 2 + 100 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 100 + heightOffset);
 }
 
 function Rocket()
