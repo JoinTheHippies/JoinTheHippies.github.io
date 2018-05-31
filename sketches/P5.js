@@ -20,14 +20,14 @@ function setup() {
   background(0, 255, 0);
   rocketObj = new Rocket();
 
-  //Spawn flecks
-  // for(var x = 0; x < Math.round(width); x+=20)
-  // {
-  //   for(var y = 0; y < Math.round(height); y+=35)
-  //   {
-  //     fleckList.push(new Fleck(x, y));
-  //   }
-  // }
+  Spawn flecks
+  for(var x = 0; x < Math.round(width); x+=20)
+  {
+    for(var y = 0; y < Math.round(height); y+=35)
+    {
+      fleckList.push(new Fleck(x, y));
+    }
+  }
 }
 
 function draw() {
@@ -48,10 +48,10 @@ function draw() {
   // rect(0, height - 200, width, 200);
   DrawPlatform();
 
-  //Random sky-colored flecks
-  // fleckList.forEach(function(f){
-  //   f.Display();
-  // });
+  Random sky-colored flecks
+  fleckList.forEach(function(f){
+    f.Display();
+  });
 
   rocketObj.Display();
   
