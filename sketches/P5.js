@@ -51,10 +51,10 @@ function draw() {
   // rect(0, height - 200, width, 200);
   DrawPlatform();
 
-  // Random sky-colored flecks
-  fleckList.forEach(function(f){
-    f.Display();
-  });
+  // // Random sky-colored flecks
+  // fleckList.forEach(function(f){
+  //   f.Display();
+  // });
 
   rocketObj.Display();
   
@@ -102,7 +102,7 @@ function DrawPlatform()
 function Rocket()
 {
   this.x = width / 2 - (width / 3);
-  this.y = height + 200;
+  this.y = height - 200;
   
   this.GetX = function()
   {
