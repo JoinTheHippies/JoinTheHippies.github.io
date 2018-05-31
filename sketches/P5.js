@@ -16,7 +16,7 @@ function setup() {
   widthOffset = -width / 5;
   heightOffset = 200;
 
-  console.log("3d platform ver 2");
+  console.log("3d platform ver 3");
   smokeList = [];
   fleckList = [];
   noStroke();
