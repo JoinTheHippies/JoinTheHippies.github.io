@@ -51,7 +51,7 @@ function draw() {
   // rect(0, height - 200, width, 200);
   DrawPlatform();
 
-  Random sky-colored flecks
+  // Random sky-colored flecks
   fleckList.forEach(function(f){
     f.Display();
   });
