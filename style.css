@@ -19,6 +19,7 @@ body{
 	font-size: 18px;
 }
 .centerTitle{
+	vertical-align: middle;
 	text-align: center;
 	transform-origin: center;
 	font-size: 50px;
