@@ -2,9 +2,11 @@ var rocketObj;
 var smokeList;
 var widthOffset;
 var heightOffset;
+var timeInSeconds;
 // var fleckList;
 
 function setup() {
+  timeInSeconds = 0;
   widthOffset = -200;
   heightOffset = 200;
   console.log("flecks version 11");
@@ -29,6 +31,10 @@ function setup() {
 }
 
 function draw() {
+  if(millis() / 1000 > timeInSeconds)
+  {
+    timeInSeconds++;
+  }
   textSize(32);
   //Sky
   background(92,219,149);
@@ -52,7 +58,7 @@ function draw() {
   if(millis() < 12000)
   {
     fill(255, 255, 255);
-    text("Launching in: " + (12000 - millis()), width / 2, height / 2);
+    text("Launching in: " + (12 - timeInSeconds), width / 2, height / 2);
   }
   else
   {
