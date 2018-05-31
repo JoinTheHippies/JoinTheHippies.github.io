@@ -31,7 +31,7 @@ function setup() {
 function draw() {
   textSize(32);
   //Sky
-  background(44,53,49);
+  background(92,219,149);
   //Sun
   // fill(247,159,121);
   // ellipse(width / 2, height / 2, 500, 500);
@@ -70,13 +70,13 @@ function draw() {
 function DrawPlatform()
 {
   noStroke();
-  fill(17,100,102);
+  fill(5,56,107);
   quad(width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 200 + widthOffset, height / 2 - 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset);
   quad(width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 100 + heightOffset);
   quad(width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 100 + widthOffset, height / 2 + 100 + heightOffset, width / 2 - 400 + widthOffset, height / 2 + 100 + heightOffset);
   
   strokeWeight(5);
-  stroke(255, 255, 255);
+  stroke(92,219,149);
   
   line(width / 2 - 400 + widthOffset, height / 2 + 50 + heightOffset, width / 2 - 200 + widthOffset, height / 2 - 50 + heightOffset);
   line(width / 2 - 200 + widthOffset, height / 2 - 50 + heightOffset, width / 2 + 100 + widthOffset, height / 2 - 50 + heightOffset);
