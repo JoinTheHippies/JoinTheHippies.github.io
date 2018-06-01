@@ -16,7 +16,7 @@ function setup() {
   widthOffset = -width / 5;
   heightOffset = 200;
 
-  console.log("3d platform ver 3");
+  console.log("3d platform ver 4");
   smokeList = [];
   fleckList = [];
   noStroke();
@@ -101,7 +101,7 @@ function DrawPlatform()
 
 function Rocket()
 {
-  this.x = width / 2 - (width / 2.5);
+  this.x = width / 2 - (width / 4);
   this.y = height - 300;
   
   this.GetX = function()
