@@ -18,6 +18,16 @@ body{
 	right:20px;
 	font-size: 18px;
 }
+.centerDiv{
+	margin:auto;
+	width:50%;
+	padding:10px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 100;
+	font-family: 'Montserrat';
+	color:#F7D08A;
+}
 .centerTitle{
 	vertical-align: middle;
 	text-align: center;
